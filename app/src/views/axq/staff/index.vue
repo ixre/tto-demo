@@ -108,7 +108,6 @@ class ListModel {
       this.is_delete = 0;// IsDelete
     }
 }
-console.log("----111")
 let list = reactive({loading:false,total:0, page: 1, rows: 10,data:[]});
 let dialog = reactive({title:"Form",open:false,params:0,modal: null});
 let requesting = ref(false);

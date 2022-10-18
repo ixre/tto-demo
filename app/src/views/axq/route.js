@@ -4,7 +4,7 @@ export const axqRoutes = {
   redirect: 'staff/index',
   meta: {
     // roles: ["admin"],
-    title: 'axq',
+    title: '公司职员',
     icon: 'example'
   },
   children: [
@@ -14,7 +14,7 @@ export const axqRoutes = {
       component: () => import(/* webpackChunkName: "axq_staff-index" */ './staff/index.vue'),
       meta: {
         // roles: ["admin"],
-        title: 'AxqStaff',
+        title: '公司职员',
         icon: 'list'
       }
     }
