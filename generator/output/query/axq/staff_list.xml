@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ExportItemConfig>
+    <ColumnMapping>
+    id:Id;dept_id:DeptId;job_id:JobId;is_admin:IsAdmin;access_extra_json:AccessExtraJson;username:Username;passwd:Passwd;nickname:Nickname;mobile:Mobile;avatar:Avatar;status:1->启用；2->禁用;is_delete:IsDelete;create_time:CreateTime;update_time:UpdateTime;delete_time:DeleteTime
+    </ColumnMapping>
+    <Query>
+        <![CDATA[
+        SELECT * FROM axq_staff
+        WHERE {where}
+        ORDER BY {order_by}
+        LIMIT {page_offset},{page_size}
+     ]]>
+    </Query>
+    <Import><![CDATA[]]></Import>
+    <Total>
+        <![CDATA[
+            SELECT COUNT(1) FROM axq_staff WHERE {where}
+        ]]>
+    </Total>
+</ExportItemConfig>

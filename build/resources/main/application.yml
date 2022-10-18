@@ -1,0 +1,16 @@
+server:
+  port: 18080
+spring:
+  profiles:
+    active: default
+  datasource:
+    type: com.zaxxer.hikari.HikariDataSource
+    driverClassName: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://192.168.1.159:3306/aoxueqi?allowMultiQueries=true&useUnicode=true&useSSL=false&allowPublicKeyRetrieval=true&characterEncoding=utf-8
+    username: aoxueqi
+    password: iAAW6byjJsPNSBnn
+    hikari:
+      minimum-idle: 20
+      idle-timeout: 180000
+      maximum-pool-size: 300
+      auto-commit: true
